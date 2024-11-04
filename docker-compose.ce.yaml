@@ -7,7 +7,7 @@ services:
     #      context: .
     #      dockerfile: Dockerfile.ce
     ports:
-      - "8000:8000"
+      - "8080:8000"  # Changed to avoid conflict with Coolify on port 8000
     volumes:
       - ./zep.yaml:/app/zep.yaml
     environment:
